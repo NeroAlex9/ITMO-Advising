@@ -1,10 +1,79 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font-family: "Golos Text", sans-serif;
+}
+
+
+
+.container{ 
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
     display: flex;
 }
 
-.container{
-    max-width: 1160px;
-    text-align: center;
+.header{
+    width: 100%;
+    position: fixed;
+    padding-bottom: 5px;
+    background-color: #9918f5;
+}
+
+.header_logo{
+    width: 150px;
+    
+}
+
+.nav{
+    display: flex;
+    margin: 0 auto;
+    Font-weight: 500;
+    align-items: center;
+}
+
+.nav_link{
+    color: black;
+    text-decoration: none;
+    margin-left: 110px;
+    cursor: pointer;
+}
+
+.main{
+    padding-top: 65px;
+    height: 500px;
+}
+
+.footer{
+    padding-top: 10px;
+    background-color: #9918f5;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.footer_left{
+    width: 485px;
+}
+
+.left_text{
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+.footer_logo{
+    width: 225px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.footer_right{
+    width: 400px;
+}
+
+.right_title{
+    float: right;
+}
+
+.right_subtitle{
+    float: right;
 }
