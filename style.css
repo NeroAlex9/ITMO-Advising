@@ -17,7 +17,7 @@
     width: 100%;
     position: fixed;
     padding-bottom: 5px;
-    background-color: #9918f5;
+    background-color: #7F00FF;
 }
 
 .header_logo{
@@ -46,9 +46,10 @@
 
 .footer{
     padding-top: 10px;
-    background-color: #9918f5;
+    background-color: #7F00FF;
     font-size: 12px;
     line-height: 19px;
+    
 }
 
 .footer_left{
@@ -76,4 +77,8 @@
 
 .right_subtitle{
     float: right;
+}
+
+.text_link{
+    color: black;
 }
