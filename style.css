@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'НorizontMedium';
+    src: url('OTF/ALSGorizont-MediumExpanded.otf');
+    }
 *{
     padding: 0;
     margin: 0;
@@ -33,9 +37,11 @@
 }
 
 .nav_link{
-    color: black;
+    color: #1d1d1f;
     text-decoration: none;
-    margin-left: 110px;
+    margin-left: 65px;
+    font-family: "НorizontMedium";
+    font-size: 14px;
     cursor: pointer;
 }
 
@@ -62,7 +68,8 @@
 }
 
 .footer_logo{
-    width: 225px;
+    padding-left: 20px;
+    width: 250px;
     height: 100px;
     margin: 0 auto;
 }
