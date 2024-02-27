@@ -2,6 +2,11 @@
     font-family: 'НorizontMedium';
     src: url('OTF/ALSGorizont-MediumExpanded.otf');
     }
+    @font-face {
+        font-family: 'НorizontBold';
+        src: url('OTF/ALSGorizont-BoldExpanded.otf');
+        }    
+    
 *{
     padding: 0;
     margin: 0;
@@ -20,46 +25,59 @@
 .header{
     width: 100%;
     position: fixed;
-    padding-bottom: 5px;
-    background-color: #7F00FF;
+    padding-bottom: 10px;
+    background-color: #D0FF14;
+}
+
+.logo_block{
+    position: relative;
 }
 
 .header_logo{
     width: 150px;
-    
+}
+
+.logo_text{
+    font-family: 'НorizontBold';
+    position: absolute;
+    top: 46px;
+    left: 61px;
 }
 
 .nav{
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 125px;
     display: flex;
-    margin: 0 auto;
+    justify-content: space-between;
     Font-weight: 500;
     align-items: center;
+    list-style-type: none;
 }
 
 .nav_link{
-    color: #1d1d1f;
-    text-decoration: none;
-    margin-left: 65px;
+    color: #2F0D39;
+    
     font-family: "НorizontMedium";
     font-size: 14px;
     cursor: pointer;
 }
 
 .main{
-    padding-top: 65px;
-    height: 500px;
+    padding-top: 70px;
+    height: 500px;    
 }
 
 .footer{
     padding-top: 10px;
-    background-color: #7F00FF;
+    background-color: #D0FF14;
     font-size: 12px;
     line-height: 19px;
     
 }
 
 .footer_left{
-    width: 485px;
+    width: 430px;
 }
 
 .left_text{
@@ -68,8 +86,7 @@
 }
 
 .footer_logo{
-    padding-left: 20px;
-    width: 250px;
+    width: 270px;
     height: 100px;
     margin: 0 auto;
 }
@@ -87,5 +104,12 @@
 }
 
 .text_link{
-    color: black;
+    color: #2F0D39;
+}
+
+
+@media (device-width< 480px){
+    .nav{
+        display: none;
+    }
 }
