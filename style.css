@@ -2,10 +2,14 @@
     font-family: 'НorizontMedium';
     src: url('OTF/ALSGorizont-MediumExpanded.otf');
     }
-    @font-face {
-        font-family: 'НorizontBold';
-        src: url('OTF/ALSGorizont-BoldExpanded.otf');
-        }    
+@font-face {
+    font-family: 'НorizontBold';
+    src: url('OTF/ALSGorizont-BoldExpanded.otf');
+    }
+@font-face {
+    font-family: 'НorizontRegular';
+    src: url('OTF/ALSGorizont-RegularExpanded.otf');
+    }     
     
 *{
     padding: 0;
@@ -24,9 +28,7 @@
 
 .header{
     width: 100%;
-    position: fixed;
-    padding-bottom: 10px;
-    background-color: #D0FF14;
+    background-color: #FFFFFF;
 }
 
 .logo_block{
@@ -34,14 +36,7 @@
 }
 
 .header_logo{
-    width: 150px;
-}
-
-.logo_text{
-    font-family: 'НorizontBold';
-    position: absolute;
-    top: 46px;
-    left: 61px;
+    width: 355px;
 }
 
 .nav{
@@ -58,8 +53,8 @@
 .nav_link{
     color: #2F0D39;
     
-    font-family: "НorizontMedium";
-    font-size: 14px;
+    font-family: "НorizontRegular";
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -70,7 +65,7 @@
 
 .footer{
     padding-top: 10px;
-    background-color: #D0FF14;
+    background-color: #000000;
     font-size: 12px;
     line-height: 19px;
     
