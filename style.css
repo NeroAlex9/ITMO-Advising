@@ -17,51 +17,42 @@
     font-family: "Golos Text", sans-serif;
 }
 
-
-
 .container{ 
     width: 100%;
-    max-width: 1160px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
 }
 
 .header{
-    width: 100%;
     background-color: #FFFFFF;
 }
 
-.logo_block{
-    position: relative;
+.header_container{
+    max-width: 1200px;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .header_logo{
-    width: 355px;
+    max-width: 355px;
 }
 
 .nav{
-    width: 100%;
-    padding-top: 10px;
-    padding-left: 125px;
     display: flex;
     justify-content: space-between;
-    Font-weight: 500;
     align-items: center;
     list-style-type: none;
 }
 
 .nav_link{
-    color: #2F0D39;
-    
+    color: #000000;
     font-family: "НorizontRegular";
     font-size: 16px;
     cursor: pointer;
+    padding-left: 15px;
 }
 
-.main{
-    padding-top: 70px;
-    height: 500px;    
-}
 
 .footer{
     padding-top: 10px;
