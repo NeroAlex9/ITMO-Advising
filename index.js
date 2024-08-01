@@ -15,7 +15,7 @@ let currentIndex = 0;
         slides.style.transform = `translateX(-${currentIndex * 100}%)`;
         
         dots.forEach((dot, i) => {
-            dot.classList.toggle('active', i === currentIndex);
+            dot.classList.toggle('active-dot', i === currentIndex);
         });
     }
 
