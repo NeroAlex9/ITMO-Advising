@@ -51,14 +51,25 @@
                     <button class="green-btn">Присоединиться</button>
                 </div>
                 <div class="slider">
-                    <div class="slides" id="slides">
-                        <div class="slide"><img src="image1.jpg" alt="Изображение 1"></div>
-                        <div class="slide"><img src="image2.jpg" alt="Изображение 2"></div>
-                        <div class="slide"><img src="image3.jpg" alt="Изображение 3"></div>
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="https://via.placeholder.com/600x400?text=Фото+1" alt="Фото 1">
+                        </div>
+                        <div class="slide">
+                            <img src="https://via.placeholder.com/600x400?text=Фото+2" alt="Фото 2">
+                        </div>
+                        <div class="slide">
+                            <img src="https://via.placeholder.com/600x400?text=Фото+3" alt="Фото 3">
+                        </div>
+                        <div class="slide">
+                            <img src="https://via.placeholder.com/600x400?text=Фото+4" alt="Фото 4">
+                        </div>
                     </div>
-                    <div class="buttons">
-                        <button class="button" onclick="prevSlide()">&#10094;</button>
-                        <button class="button" onclick="nextSlide()">&#10095;</button>
+                    <div class="dots">
+                        <span class="dot active" onclick="currentSlide(0)"></span>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
                     </div>
                 </div>
             </div>
