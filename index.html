@@ -17,23 +17,73 @@
             <div class="logo_block">
                 <img class="header_logo" src="image/advising_logo.png" alt="logo">
             </div>
-            <ul class="nav">
-                <li href="" class="nav_link">Об эдвайзинге</li>
-                <li href="" class="nav_link">Отзывы</li>
-                <li href="" class="nav_link">Присоединиться</li>
-                <li href="" class="nav_link">Контакты</li>
-            </ul>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#about_us_id" class="nav-link">Об эдвайзинге</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#feedback_id" class="nav-link">Отзывы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#join_us_id" class="nav-link">Присоединиться</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacts_id" class="nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <div class="burger-line close-line-1"></div>
+                <div class="burger-line close-line-1"></div>
+                <div class="burger-line close-line-2"></div>
+              </div>
         </div>
     </header>
     <main class="main">
-        <section class="about_project">
-            <div class="container">Об эдвайзинге</div></section>
-        <section class="for_student">
-            <div class="container">Отзывы</div></section>
-        <section class="for_adviser">
-            <div class="container">Присоединиться</div></section>
-        <section class="contacts">
-            <div class="container">Контакты</div></section>
+        <section id="about_us_id" class="section about_us">
+            <div class="container section-container">
+                <div class="about_us-content">
+                    <div class="about_us-text">
+                        <h1 class="main-title">Сервис академического консультирования</h1>
+                        <p class="add-text">Оказание консультативной помощи студентам Университета ИТМО в организационных и содержательных вопросах, касающихся обучения и построения карьеры</p>    
+                    </div>
+                    <button class="green-btn">Присоединиться</button>
+                </div>
+                <div class="slider">
+                    <div class="slides" id="slides">
+                        <div class="slide"><img src="image1.jpg" alt="Изображение 1"></div>
+                        <div class="slide"><img src="image2.jpg" alt="Изображение 2"></div>
+                        <div class="slide"><img src="image3.jpg" alt="Изображение 3"></div>
+                    </div>
+                    <div class="buttons">
+                        <button class="button" onclick="prevSlide()">&#10094;</button>
+                        <button class="button" onclick="nextSlide()">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about_us_id" class="section functions">
+            <div class="container section-container">Функции эдвайзера</div>
+        </section>
+        <section id="about_us_id" class="section how_it_works">
+            <div class="container section-container">Как работает эдвайзинг</div>
+        </section>
+        <section id="about_us_id" class="section departments">
+            <div class="container section-container">Учебные подразделения</div>
+        </section>
+        <section id="about_us_id" class="section peer-to-peer">
+            <div class="container section-container">Peer-to-peer эдвайзинг</div>
+        </section>
+        <section id="join_us_id" class="section join_us">
+            <div class="container section-container">Присоединиться</div>
+        </section>
+        <section id="feedback_id" class="section feedback">
+            <div class="container section-container">Отзывы</div>
+        </section>
+        <section id="contacts_id" class="section contacts">
+            <div class="container section-container">Контакты</div>
+        </section>
         </main>
     <footer class="footer">
             <div class="container">
@@ -53,5 +103,6 @@
                 
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
