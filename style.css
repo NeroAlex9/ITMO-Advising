@@ -21,7 +21,6 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    display: flex;
 }
 
 /* __________________________________header_________________________________________________ */
@@ -34,6 +33,7 @@
     max-width: 1200px;
     justify-content: space-between;
     margin: 0 auto;
+    display: flex;
 }
 
 .header_logo{
@@ -104,11 +104,27 @@
 
 .section-container {
     max-width: 1200px;
-    display: flex;
     padding: 60px 10px;
 }
 
+.title-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-family: 'НorizontRegular';
+    font-size: 40px;
+    font-weight: 100;
+}
+
 /* __________________________________about_us_________________________________________________ */
+
+.about_us-container {
+    display: flex;
+}
 
 .about_us-content {
     display: flex;
@@ -141,8 +157,11 @@
     margin: 35px 20px;
 }
 
-.slider {
+.slider-box {
     max-width: 520px;
+}
+
+.slider {
     overflow: hidden;
     border-radius: 40px;
     position: relative;
@@ -197,6 +216,31 @@
 .active-dot {
     background-color: #d0ff14;
 }
+
+/*_____________________________________________functions______________________________________*/
+
+.functions-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 60px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.function-item {
+    max-width: 330px;
+    min-height: 160px;
+    border: 1.3px solid #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: left;
+    padding: 10px 30px;
+}
+
 
 /* __________________________________footer_________________________________________________ */
 
