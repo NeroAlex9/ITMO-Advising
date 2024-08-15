@@ -30,3 +30,9 @@ let currentIndex = 0;
 
     // Изначально отображаем первый слайд
     showSlide(currentIndex);
+
+document.querySelector('.green-btn').addEventListener('click', function() {
+    document.querySelector('#join_us_id').scrollIntoView({
+        behavior: 'smooth' 
+    });
+});

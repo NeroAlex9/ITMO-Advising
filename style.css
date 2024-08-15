@@ -15,6 +15,7 @@
     padding: 0;
     margin: 0;
     font-family: "Golos Text", sans-serif;
+    scroll-behavior: smooth;
 }
 
 .container{ 
@@ -305,6 +306,49 @@
     display: flex;
     justify-content: center;
 }
+
+/*________________________________peer-to-peer_____________________________________________*/
+
+/*________________________________join_us___________________________________________________*/
+
+.join_us-content {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 80px;
+    margin: 40px 0;
+}
+
+.join_us-item {
+    display: flex;
+    padding: 10px;
+}
+
+.card-title.join_us-num {
+    font-size: 62px;
+    margin-right: 40px;
+    font-family: 'НorizontBold';
+    padding: 5px;
+}
+
+.card-text {
+    font-size: 20px;
+    line-height: 160%;
+    max-width: 165px;
+}
+
+.join_us-btn {
+    margin-bottom: 15px;
+}
+
+.join_us-text {
+    font-size: 12px;
+    max-width: 450px;
+    text-align: center;
+}
+
+/*_________________________________feedback_________________________________________________*/
+
+
 
 /* __________________________________footer_________________________________________________ */
 
