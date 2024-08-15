@@ -21,6 +21,7 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+    font-weight: 100;
 }
 
 /* __________________________________header_________________________________________________ */
@@ -120,6 +121,17 @@
     font-weight: 100;
 }
 
+.subtitle {
+    font-family: 'НorizontRegular';
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: 100;
+}
+
+.stars {
+    margin-top: -15px;
+}
+
 /* __________________________________about_us_________________________________________________ */
 
 .about_us-container {
@@ -130,20 +142,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: 20px;
 }
 
 .main-title {
     font-family: "НorizontBold";
     font-size: 36px;
     line-height: 130%;
-    margin: 0 20px 20px 20px;
+    margin-bottom: 20px;
 }
 
 .add-text {
     font-size: 20px;
     color: #939393;
     line-height: 160%;
-    margin: 20px;
 }
 
 .green-btn {
@@ -154,7 +166,7 @@
     font-family: "НorizontRegular";
     font-size: 16px;
     cursor: pointer;
-    margin: 35px 20px;
+    margin-bottom: 35px;
 }
 
 .slider-box {
@@ -223,8 +235,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
     gap: 60px;
-    padding: 20px;
-    margin: 20px 0;
+    margin-bottom: 40px;;
 }
 
 .function-item {
@@ -241,6 +252,59 @@
     padding: 10px 30px;
 }
 
+/*________________________________how_it_works______________________________________________*/
+
+.how_it_works-video {
+    width: 100%;
+    border-radius: 40px;
+    margin: 20px 0;
+}
+
+.FAQ-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FAQ-item {
+    border: #000000 1.3px solid;
+    border-radius: 40px;
+    padding: 10px 20px;
+    margin: 0 10px 10px 0;
+}
+
+/*________________________________departments______________________________________________*/
+
+.departments-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin: 40px 0; 
+}
+
+.departments-item {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 36px;
+    font-family: 'НorizontRegular';
+    margin: 0;
+}
+
+.card-subtext {
+    font-size: 12px;
+    /* font-weight: 100; */
+}
+
+.last-card {
+    grid-column: 2 / span 2;
+    justify-self: center;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+}
 
 /* __________________________________footer_________________________________________________ */
 
