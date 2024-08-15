@@ -36,3 +36,4 @@ document.querySelector('.green-btn').addEventListener('click', function() {
         behavior: 'smooth' 
     });
 });
+
