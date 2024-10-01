@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
     <title>ITMO Advising</title>
    
 
@@ -254,59 +255,91 @@
                     <h2 class="section-title">Отзывы</h2>
                 </div>
                 <div class="feedback-content">
-                    <button class="slider-button left" id="prevBtn">&#10094;</button>
+                    <button class="slider-button left" id="prevBtn"><svg width="38" height="48" viewBox="0 0 38 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.625 36L7.375 24L19.625 12" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg></button>
                 
                     <div class="feedback-wrapper" id="feedbackWrapper">
                         <div class="feedback-item">
-                            <div class="feedback-photo-box">
-                                <img src="/image/Tatiana.jpg" alt="Фото 1" class="feedback-photo">
+                            <div class="feedback-data">
+                                <div class="feedback-photo-box">
+                                    <img src="/image/Tatiana.jpg" alt="Фото 1" class="feedback-photo">
+                                </div>
+                                <div class="feedback-name">
+                                    <h3 class="subtitle">Татьяна</h3>
+                                    <p class="card-subtext">Эдвайзер Центра ХИ, магистрант</p>
+                                </div>
                             </div>
                             <div class="feedback-text">
-                                <h3 class="subtitle">Татьяна</h3>
-                                <p class="card-subtext">Эдвайзер Центра ХИ, магистрант</p>
                                 <p class="card-subtext">Я сопровождаю 2 и 3 курсы бакалавриата. Это очень амбициозные и открытые к новым свершениям студенты. Я рада, что благодаря ITMO Advising большинству из них удается реализовывать свой потенциал на все 100%. Я стараюсь выстраивать со студентами доверительные, открытые отношения, быть другом. Работа эдвайзером помогает мне развивать навык работы с большим потоком обращений и совершенствовать коммуникативные навыки.</p>
                             </div>
                         </div>
                         <div class="feedback-item">
-                            <div class="feedback-photo-box">
-                                <img src="/image/avatar.png" alt="Фото 2" class="feedback-photo">
+                            <div class="feedback-data">
+                                    <div class="feedback-photo-box">
+                                        <img src="/image/avatar.png" alt="Фото 2" class="feedback-photo">
+                                    </div>
+                                    <div class="feedback-name">
+                                         <h3 class="subtitle">Валентин</h3>
+                                        <p class="card-subtext">Студент бакалавриата ФСУиР</p>
+                                    </div>
                             </div>
                             <div class="feedback-text">
-                                <h3 class="subtitle">Валентин</h3>
-                                <p class="card-subtext">Студент бакалавриата ФСУиР</p>
                                 <p class="card-subtext">Это была отличная идея выделить отдельного человека для персонального подхода. Мы чувствуем себя более комфортно и защищенно. Эдвайзер постоянно проявляет активность, интересуется положением студентов, всегда предлагает помощь и решает все вопросы в самом начале. Благодаря тому, что эдвайзер постоянно на связи, никогда не возникало проблем в процессе обучения, вся группа очень и рада, что он есть.</p>
                             </div>
                         </div>
                         <div class="feedback-item">
-                            <div class="feedback-photo-box">
-                                <img src="/image/Yana.PNG" alt="Фото 3" class="feedback-photo">
+                                <div class="feedback-data">
+                                    <div class="feedback-photo-box">
+                                        <img src="/image/Yana.PNG" alt="Фото 3" class="feedback-photo">
+                                    </div>
+                                    <div class="feedback-name">
+                                        <h3 class="subtitle">Яна</h3>
+                                        <p class="card-subtext">Заместитель декана ФизФ</p>
+                                    </div>
                             </div>
                             <div class="feedback-text">
-                                <h3 class="subtitle">Яна</h3>
-                                <p class="card-subtext">Заместитель декана ФизФ</p>
+                               
                                 <p class="card-subtext">Эдвайзер полностью берет на себя общение со студентами, подтягивает отстающих, во многом является доверенным лицом факультета. От эдвайзера какая-либо информация воспринимается студентами лучше, чем от представителей факультета.</p>
                             </div>
                         </div>
                         <!-- <div class="feedback-item">
-                            <img src="photo4.jpg" alt="Фото 4" class="feedback-photo">
-                            <div class="feedback-text">
-                                <h3 class="subtitle">Имя 4</h3>
-                                <p class="card-subtext">Должность 4</p>
-                                <p class="card-subtext">Текст отзыва 4.</p>
-                            </div>
+                            <div class="feedback-data">
+                                <div class="feedback-photo-box">
+                                    <img src="/image/Yana.PNG" alt="Фото 3" class="feedback-photo">
+                                </div>
+                                <div class="feedback-name">
+                                    <h3 class="subtitle">Яна</h3>
+                                    <p class="card-subtext">Заместитель декана ФизФ</p>
+                                </div>
                         </div>
-                        <div class="feedback-item">
-                            <img src="photo5.jpg" alt="Фото 5" class="feedback-photo">
-                            <div class="feedback-text">
-                                <h3 class="subtitle">Имя 5</h3>
-                                <p class="card-subtext">Должность 5</p>
-                                <p class="card-subtext">Текст отзыва 5.</p>
-                            </div>
-                        </div> -->
+                        <div class="feedback-text">
+                           
+                            <p class="card-subtext">Эдвайзер полностью берет на себя общение со студентами, подтягивает отстающих, во многом является доверенным лицом факультета. От эдвайзера какая-либо информация воспринимается студентами лучше, чем от представителей факультета.</p>
+                        </div>
                     </div>
-                
-                    <button class="slider-button right" id="nextBtn">&#10095;</button>
+                    <div class="feedback-item">
+                        <div class="feedback-data">
+                            <div class="feedback-photo-box">
+                                <img src="/image/Yana.PNG" alt="Фото 3" class="feedback-photo">
+                            </div>
+                            <div class="feedback-name">
+                                <h3 class="subtitle">Яна</h3>
+                                <p class="card-subtext">Заместитель декана ФизФ</p>
+                            </div>
+                    </div>
+                    <div class="feedback-text">
+                       
+                        <p class="card-subtext">Эдвайзер полностью берет на себя общение со студентами, подтягивает отстающих, во многом является доверенным лицом факультета. От эдвайзера какая-либо информация воспринимается студентами лучше, чем от представителей факультета.</p>
+                    </div>
                 </div>
+                    </div> -->
+                
+                   
+                </div>
+                <button class="slider-button right" id="nextBtn"><svg width="38" height="48" viewBox="0 0 38 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 36L30 24L18 12" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></button>
             </div>
         </section>
         <section id="contacts_id" class="section contacts-section">
