@@ -13,28 +13,310 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header_container">
             <div class="logo_block">
-                <img class="header_logo" src="image/logo_osnovnoy_russkiy_chernyy.png" alt="logo">
-                <p class="logo_text">advising</p>
+                <img class="header_logo" src="image/advising_logo.png" alt="logo">
             </div>
-            <ul class="nav">
-                <li href="" class="nav_link">О проекте</li>
-                <li href="" class="nav_link">Для студентов</li>
-                <li href="" class="nav_link">Для эдвайзеров</li>
-                <li href="" class="nav_link">Cвяжитесь с нами</li>
-            </ul>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#about_us_id" class="nav-link">Об эдвайзинге</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#feedback_id" class="nav-link">Отзывы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#join_us_id" class="nav-link">Присоединиться</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacts_id" class="nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <div class="burger-line close-line-1"></div>
+                <div class="burger-line close-line-1"></div>
+                <div class="burger-line close-line-2"></div>
+              </div>
         </div>
     </header>
     <main class="main">
-        <section class="about_project">
-            <div class="container">О проекте</div></section>
-        <section class="for_student">
-            <div class="container">Для студентов</div></section>
-        <section class="for_adviser">
-            <div class="container">Для эдвайзеров</div></section>
-        <section class="contacts">
-            <div class="container">Cвяжитесь с нами</div></section>
+        <section id="about_us_id" class="section about_us">
+            <div class="container section-container about_us-container">
+                <div class="about_us-content">
+                    <div class="about_us-text">
+                        <h1 class="main-title">Сервис академического консультирования</h1>
+                        <p class="add-text">Оказание консультативной помощи студентам Университета ИТМО в организационных и содержательных вопросах, касающихся обучения и построения карьеры</p>    
+                    </div>
+                    <div class="bnt-container">
+                        <button class="green-btn">Присоединиться</button>
+                    </div>
+                </div>
+                <div class="slider-box">
+                    <div class="slider">
+                        <div class="slides">
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <img src="/image/photo-1.jpg" alt="Фото 1">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <img src="/image/photo-2.jpg" alt="Фото 2">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <img src="/image/photo-3.jpg" alt="Фото 3">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <img src="/image/photo-4.jpg" alt="Фото 4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dots">
+                        <span class="dot active-dot" onclick="currentSlide(0)"></span>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about_us_id" class="section functions-section">
+            <div class="container section-container functions-container">
+                <div class="title-box">
+                    <h2 class="section-title">Функции эдвайзера</h2>
+                    <img src="/image/Stars-2.svg" alt="stars" class="stars">
+                </div>
+                <div class="functions-content">
+                    <div class="function-item">
+                        <p>Оказание помощи студентам при построении индивидуальных образовательных траекторий</p>
+                    </div>
+                    <div class="function-item">
+                        <p>Сопровождение образовательного процесса</p>
+                    </div>
+                    <div class="function-item">
+                        <p>Организация групповых и индивидуальных консультаций студентов</p>
+                    </div>
+                    <div class="function-item">
+                        <p>Мониторинг текущей успеваемости студентов и стимулирование к ликвидации академических задложенностей</p>
+                    </div>
+                    <div class="function-item">
+                        <p>Участие в мероприятиях, связанных с образовательным процессом, в качестве представителей факультета</p>
+                    </div>
+                    <div class="function-item">Консультирование по содержательным вопросам, возникающим в процессе обучения</div>
+                </div>
+            </div>
+        </section>
+        <section id="about_us_id" class="section how_it_works-section">
+            <div class="container section-container">
+                <div class="title-box">
+                  <h2 class="section-title">Как работает эдвайзинг</h2>  
+                </div>
+                <div class="how_it_works-content">
+                    <video class="how_it_works-video" controls>
+                        <source src="https://drive.google.com/uc?id=1SBVOkMxEyk09cmte4MS1-D3a13j3TrEb" type="video/quicktime">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                    <div class="FAQ-container">
+                        <h3 class="subtitle">Топ вопросов к эдвайзеру</h3>
+                        <div class="FAQ-content">
+                            <div class="FAQ-item">
+                                <p class="btn-text">#выборность</p>
+                            </div>
+                            <div class="FAQ-item">
+                                <p class="btn-text">#ИОП</p>
+                            </div>
+                            <div class="FAQ-item">
+                                <p class="btn-text">#найтипреподавателя</p>
+                            </div>
+                            <div class="FAQ-item">
+                                <p class="btn-text">#ППА</p>
+                            </div>
+                            <div class="FAQ-item">
+                                <p class="btn-text">#ВКР</p>
+                            </div>
+                            <div class="FAQ-item">
+                                <p class="btn-text">#академмобильность</p>
+                            </div>
+                            <div class="FAQ-item">
+                                <p class="btn-text">#НИР</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about_us_id" class="section departments-section">
+            <div class="container section-container">
+                <div class="title-box">
+                    <h2 class="section-title">Учебные подразделения</h2>
+                    <img src="/image/Stars-2.svg" alt="stars" class="stars">                    
+                </div>
+                <div class="departments-content">
+                    <div class="departments-item">
+                        <h4 class="subtitle card-title">ФСУиР</h4>
+                        <p class="add-text card-subtext">Факультет систем управления и робототехники</p>
+                    </div>
+                    <div class="departments-item">
+                        <h4 class="subtitle card-title">ФТМИ</h4>
+                        <p class="add-text card-subtext">Факультет технологического менеджмента и инноваций</p>
+                    </div>
+                    <div class="departments-item">
+                        <h4 class="subtitle card-title">ФизФ</h4>
+                        <p class="add-text card-subtext">Физический факультет</p>
+                    </div>
+                    <div class="departments-item">
+                        <h4 class="subtitle card-title">Центр ХИ</h4>
+                        <p class="add-text card-subtext">Центр химической инженерии</p>
+                    </div>
+                    <div class="departments-item">
+                        <h4 class="subtitle card-title">ИЛТ</h4>
+                        <p class="add-text card-subtext">Институт лазерных технологий</p>
+                    </div>
+                    <div class="departments-item">
+                        <h4 class="subtitle card-title">ФБТ</h4>
+                        <p class="add-text card-subtext">Факультет биотехнологий</p>
+                    </div>
+                    <div class="departments-item">
+                        <h4 class="subtitle card-title">ФИТиП</h4>
+                        <p class="add-text card-subtext">Факультет информационных технологий и программирования</p>
+                    </div>
+                    <div class="departments-item">
+                        <h4 class="subtitle card-title">НОЛ ТЗ</h4>
+                        <p class="add-text card-subtext">Научно-образовательная лаборатория "Техническое зрение"</p>
+                    </div>
+                    <div class="departments-item last-card">
+                        <h4 class="subtitle card-title">НОЦ математики</h4>
+                        <p class="add-text card-subtext">Научно-образовательный центр математики</p>
+                    </div>
+                </div>
+                <div class="btn-container btn-center">
+                    <button class="green-btn ">Найти своего эдвайзера</button>
+                </div>
+            </div>
+        </section>
+        <section id="about_us_id" class="section peer-to-peer-section">
+            <div class="container section-container">
+                <div class="title-box">
+                    <h2 class="section-title">Peer-to-peer эдвайзинг</h2>
+                </div>
+                <p class="add-text">Эдвайзер курирует студентов бакалавриата или магистратуры в соответствии со своим уровнем образования</p>
+            </div>
+        </section>
+        <section id="join_us_id" class="section join_us-section">
+            <div class="container section-container">
+                <div class="title-box">
+                    <h2 class="section-title">Как стать эдвайзером</h2>
+                    <img src="/image/Stars-2.svg" alt="stars" class="stars">
+                </div>
+                <div class="join_us-content">
+                    <div class="join_us-item">
+                        <div class="card-title join_us-num">1</div>
+                        <div class="card-text">Следить за новостями в ITMOLNIA и ИСУ</div>
+                    </div>
+                    <div class="join_us-item">
+                        <div class="card-title join_us-num">2</div>
+                        <div class="card-text">Заполнить заявку на участие</div>
+                    </div>
+                    <div class="join_us-item">
+                        <div class="card-title join_us-num">3</div>
+                        <div class="card-text">Пройти школу эдвайзера</div>
+                    </div>
+                    <div class="join_us-item">
+                        <div class="card-title join_us-num">4</div>
+                        <div class="card-text">Получить удостоверение о повышении квалификации</div>
+                    </div>
+                    <div class="join_us-item">
+                        <div class="card-title join_us-num">5</div>
+                        <div class="card-text">Пройти собеседование</div>
+                    </div>
+                    <div class="join_us-item">
+                        <div class="card-title join_us-num">6</div>
+                        <div class="card-text">Оформить документы на трудоустройство</div>
+                    </div>
+                </div>
+                <div class="btn-container btn-center">
+                    <button class="green-btn join_us-btn">Заполнить анкету кандидата</button>
+                </div>
+                <div class="title-box">
+                    <p class="add-text join_us-text">Мы пригласим вас на собеседование первыми, когда откроется новый набор, если вы заполните анкету предзаписи</p>
+                </div>
+            </div>
+        </section>
+        <section id="feedback_id" class="section feedback-section">
+            <div class="container section-container">
+                <div class="title-box">
+                    <h2 class="section-title">Отзывы</h2>
+                </div>
+                <div class="feedback-content">
+                    <button class="slider-button left" id="prevBtn">&#10094;</button>
+                
+                    <div class="feedback-wrapper" id="feedbackWrapper">
+                        <div class="feedback-item">
+                            <div class="feedback-photo-box">
+                                <img src="/image/Tatiana.jpg" alt="Фото 1" class="feedback-photo">
+                            </div>
+                            <div class="feedback-text">
+                                <h3 class="subtitle">Татьяна</h3>
+                                <p class="card-subtext">Эдвайзер Центра ХИ, магистрант</p>
+                                <p class="card-subtext">Я сопровождаю 2 и 3 курсы бакалавриата. Это очень амбициозные и открытые к новым свершениям студенты. Я рада, что благодаря ITMO Advising большинству из них удается реализовывать свой потенциал на все 100%. Я стараюсь выстраивать со студентами доверительные, открытые отношения, быть другом. Работа эдвайзером помогает мне развивать навык работы с большим потоком обращений и совершенствовать коммуникативные навыки.</p>
+                            </div>
+                        </div>
+                        <div class="feedback-item">
+                            <div class="feedback-photo-box">
+                                <img src="/image/avatar.png" alt="Фото 2" class="feedback-photo">
+                            </div>
+                            <div class="feedback-text">
+                                <h3 class="subtitle">Валентин</h3>
+                                <p class="card-subtext">Студент бакалавриата ФСУиР</p>
+                                <p class="card-subtext">Это была отличная идея выделить отдельного человека для персонального подхода. Мы чувствуем себя более комфортно и защищенно. Эдвайзер постоянно проявляет активность, интересуется положением студентов, всегда предлагает помощь и решает все вопросы в самом начале. Благодаря тому, что эдвайзер постоянно на связи, никогда не возникало проблем в процессе обучения, вся группа очень и рада, что он есть.</p>
+                            </div>
+                        </div>
+                        <div class="feedback-item">
+                            <div class="feedback-photo-box">
+                                <img src="/image/Yana.PNG" alt="Фото 3" class="feedback-photo">
+                            </div>
+                            <div class="feedback-text">
+                                <h3 class="subtitle">Яна</h3>
+                                <p class="card-subtext">Заместитель декана ФизФ</p>
+                                <p class="card-subtext">Эдвайзер полностью берет на себя общение со студентами, подтягивает отстающих, во многом является доверенным лицом факультета. От эдвайзера какая-либо информация воспринимается студентами лучше, чем от представителей факультета.</p>
+                            </div>
+                        </div>
+                        <!-- <div class="feedback-item">
+                            <img src="photo4.jpg" alt="Фото 4" class="feedback-photo">
+                            <div class="feedback-text">
+                                <h3 class="subtitle">Имя 4</h3>
+                                <p class="card-subtext">Должность 4</p>
+                                <p class="card-subtext">Текст отзыва 4.</p>
+                            </div>
+                        </div>
+                        <div class="feedback-item">
+                            <img src="photo5.jpg" alt="Фото 5" class="feedback-photo">
+                            <div class="feedback-text">
+                                <h3 class="subtitle">Имя 5</h3>
+                                <p class="card-subtext">Должность 5</p>
+                                <p class="card-subtext">Текст отзыва 5.</p>
+                            </div>
+                        </div> -->
+                    </div>
+                
+                    <button class="slider-button right" id="nextBtn">&#10095;</button>
+                </div>
+            </div>
+        </section>
+        <section id="contacts_id" class="section contacts-section">
+            <div class="container section-container">
+                <div class="title-box">
+                    <h2 class="section-title">Связаться с нами</h2>
+                    <img src="/image/Stars-2.svg" alt="stars" class="stars">
+                </div>
+            </div>
+        </section>
         </main>
     <footer class="footer">
             <div class="container">
@@ -51,8 +333,8 @@
                     <h4 class="right_subtitle" ><a class="text_link" target="_blank" href="https://itmo.ru/file/pages/79/personal_data_policy.pdf"> Политика </a> по обработке Персональных данных</h4>
                     <h4 class="right_subtitle" ><a class="text_link" target="_blank" href="https://student.itmo.ru/files/3083"> Приказ </a>ITMO.Advising </h4>
                 </div>
-                
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
